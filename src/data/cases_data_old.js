@@ -17,7 +17,7 @@ const cases = [
 			{
 				usecase: "for someone / something",
 				examples: ["Zsófinak", "Annának"],
-				question_words: [{word: "kinek", meaning: "for whom"}, "minek"]
+				question_words: ["kinek", "minek"]
 			},
 			{
 				usecase: "to call someone somehow",
@@ -35,20 +35,20 @@ const cases = [
 		usage: [
 			{
 				usecase: "countries",
-				examples: [{word: "Németországba", meaning: "to Germany"}, {word: "Indiába", meaning: "to India"}],
-				exceptions: [{word: "Magyarországra", meaning: "to Hungary"}],
-				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik országba", meaning: "to which country"}]
+				examples: ["Németországba", "Indiába"],
+				exceptions: ["Magyarországra"],
+				question_words: ["hová", "melyik országba"]
 			},
 			{
 				usecase: "cities",
-				examples: [{word: "Egerbe", meaning: "to Eger"},{word: "Freiburgba", meaning: "to Freiburg"}],
-				exceptions: [{word: "Budapestre", meaning: "to Budapest"}, {word: "Szegedre", meaning: "to Szeged"}],
-				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik városba", meaning: "to which city"}]
+				examples: ["Egerbe", "Freiburgba"],
+				exceptions: ["Budapestre", "Szegedre"],
+				question_words: ["hová", "melyik városba"]
 			},
 			{
 				usecase: "into",
 				examples: ["dobozba", "házba", "szobába"],
-				question_words: [{word: "hova / hová", meaning: "where to"},{word: "mibe", meaning: "into what"}]
+				question_words: ["hová", "mibe"]
 			}
 		]
 

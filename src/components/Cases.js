@@ -12,7 +12,7 @@ export default function Cases() {
            }
         */ }
            <div>
-               {cases.map( item => <Case key={item.name} data={item}/> ) }
+               {cases.map( item => <Case key={item.name} {...item}/> ) }
            </div>
             
         </>
