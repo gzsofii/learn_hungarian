@@ -40,13 +40,18 @@ const cases = [
 				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik országba", meaning: "to which country"}]
 			},
 			{
-				usecase: "cities",
-				examples: [{word: "Egerbe", meaning: "to Eger"},{word: "Freiburgba", meaning: "to Freiburg"}],
+				usecase: "non-Hungarian cities",
+				examples: [{word: "Londonba", meaning: "to London"},{word: "Freiburgba", meaning: "to Freiburg"}],
+				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik városba", meaning: "to which city"}]
+			},
+			{
+				usecase: "few Hungarian cities",
+				examples: [{word: "Egerbe", meaning: "to Eger"},{word: "Debrecenbe", meaning: "to Debrecen"}],
 				exceptions: [{word: "Budapestre", meaning: "to Budapest"}, {word: "Szegedre", meaning: "to Szeged"}],
 				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik városba", meaning: "to which city"}]
 			},
 			{
-				usecase: "into",
+				usecase: "into something",
 				examples: ["dobozba", "házba", "szobába"],
 				question_words: [{word: "hova / hová", meaning: "where to"},{word: "mibe", meaning: "into what"}]
 			}
@@ -62,30 +67,35 @@ const cases = [
 		usage: [
 			{
 				usecase: "countries",
-				examples: ["Németországban", "Indiában"],
-				exceptions: ["Magyarországon"],
-				question_words: ["hol", "melyik országban"]
+				examples: [{word: "Németországban", meaning: "in Germany"}, {word: "Indiában", meaning: "in India"}],
+				exceptions: [{word: "Magyarországon", meaning: "in Hungary"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "melyik országban", meaning: "in which country"}]
 			},
 			{
-				usecase: "cities",
-				examples: ["Egerben", "Freiburgban"],
-				exceptions: ["Budapesten", "Szegeden"],
-				question_words: ["hol", "melyik városban"]
+				usecase: "non-Hungarian cities",
+				examples: [{word: "Bengaluruban", meaning: "in Bengaluru"},"Madridban", "New Yorkban"],
+				question_words: [{word: "hol", meaning: "where"}, {word: "melyik városban", meaning: "in which city"}]
 			},
 			{
-				usecase: "inside",
-				examples: ["dobozban", "házban", "szobában"],
-				question_words: ["hol", "miben"]
+				usecase: "few Hungarian cities",
+				examples: [{word: "Egerben", meaning: "in Eger"},{word: "Debrecenben", meaning: "in Debrecen"}],
+				exceptions: [{word: "Budapesten", meaning: "in Budapest"}, {word: "Szegeden", meaning: "in Szeged"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "melyik városban", meaning: "in which city"}]
+			},
+			{
+				usecase: "inside something",
+				examples: [{word: "a dobozban", meaning: "in the box"}, {word: "a házban", meaning: "in the house"}, {word: "a szobában", meaning: "in the room"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "miben", meaning: "in what"}]
 			},
 			{
 				usecase: "months",
 				examples: ["januárban", "februárban"],
-				question_words: ["mikor", "melyik hónapban"]
+				question_words: [{word: "mikor", meaning: "when"}, {word: "melyik hónapban", meaning: "in which month"}]
 			},
 			{
 				usecase: "years",
 				examples: ["2021-ben", "kétezeregyben"],
-				question_words: ["mikor", "melyik évben"]
+				question_words: [{word: "mikor", meaning: "when"}, {word: "melyik évben", meaning: "in which year"}]
 			}
 		]
 	},
@@ -99,19 +109,23 @@ const cases = [
 			{
 				usecase: "countries",
 				examples: ["Németországból", "Angliából"],
-				exceptions: ["Magyarországról"],
-				question_words: ["honnan", "melyik országból"]
+				exceptions: [{word: "Magyarországról", meaning: "from Hungary"}],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik országból", meaning: "from which country"}]
 			},
 			{
-				usecase: "cities",
-				examples: ["Londonból", "Berlinből"],
-				exceptions: ["Budapestről, Szegedről"],
-				question_words: ["honnan", "melyik városból"]
+				usecase: "non-Hungarian cities",
+				examples: ["Londonból", "Berlinből", "Oslóból"],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
 			},
 			{
-				usecase: "material",
-				examples: ["műanyagból", "fából"],
-				question_words: ["miből", "milyen anyagból"]
+				usecase: "few Hungarian cities",
+				examples: ["Egerből", "Debrecenből", "Sopronból"],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
+			},
+			{
+				usecase: "made from a material",
+				examples: [{word: "műanyagból", meaning: "from plastic"},{word: "fából", meaning: "from wood"}],
+				question_words: [{word: "miből", meaning: "from what"}, {word: "milyen anyagból", meaning: "from which material"}]
 			},
 		]
 	},
@@ -125,22 +139,104 @@ const cases = [
 			{
 				usecase: "movement to surface",
 				examples: ["asztalra", "földre"],
-				question_words: ["mire", "kire"]
+				question_words: ["mire"]
 			},
 			{
-				usecase: "some countries or cities",
-				examples: ["Magyarországra", "Budapestre", "Miskolcra", "Szegedre"],
-				question_words: ["hova"]
+				usecase: "to Hungary",
+				examples: ["Magyarországra"],
+				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik országba", meaning: "to which country"}]
+			},
+			{
+				usecase: "most Hungarian cities",
+				examples: ["Budapestre", "Miskolcra", "Szegedre"],
+				exceptions: ["Egerbe", "Debrecenbe", "Sopronba"],
+				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "melyik városba", meaning: "to which city"}]
 			},
 			{
 				usecase: "until (deadline)",
 				examples: ["hétfőre", "decemberre", "2022-re"],
-				question_words: ["mikorra"]
+				question_words: [{word: "mikorra", meaning: "until when"}]
 			},
 			{
 				usecase: "duration",
 				examples: ["öt napra", "egy hétre", "három évre"],
-				question_words: ["mennyi időre"]
+				question_words: [{word: "mennyi időre", meaning: "for how long"}]
+			},
+		]
+	},
+	{
+		name: "superessive",
+		suffixes: ["-n", "-on", "-en", "-ön"],
+		meaning: "on, upon",
+		pers_prons: ["rajtam", "rajtad", "rajta", "rajtunk", "rajtatok", "rajtuk", "Önön", "Önökön"],
+		dem_prons: ["ezen", "azon"],
+		usage: [
+			{
+				usecase: "static position on surface",
+				examples: [{word: "az asztalon", meaning: "on the table"}, {word: "a széken", meaning: "on the chair"}],
+				question_words: [{word: "min", meaning: "on what"}]
+			},
+			{
+				usecase: "days of the week",
+				examples: [{word: "hétfőn", meaning: "on Monday"}, "kedden", "szerdán", "csütörtökön", "pénteken", "szombaton"],
+				exceptions: [{word: "vasárnap", meaning: "on Sunday"}],
+				question_words: [{word: "mikor", meaning: "when"},{word: "melyik napon", meaning: "on which day"}]
+			},
+			{
+				usecase: "in Hungary",
+				examples: ["Magyarországon"],
+				question_words: [{word: "hol", meaning: "where"}, {word: "melyik országban", meaning: "in which country"}]
+			},
+			{
+				usecase: "most Hungarian cities",
+				examples: [{word: "Budapesten", meaning: "in Budapest"}, {word: "Szegeden", meaning: "in Szeged"}],
+				exceptions: [{word: "Egerben", meaning: "in Eger"},{word: "Debrecenben", meaning: "in Debrecen"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "melyik városban", meaning: "in which city"}]
+			},
+		]
+	},
+	{
+		name: "delative",
+		suffixes: ["-ról", "-ről"],
+		meaning: "from",
+		pers_prons: ["rólam", "rólad", "róla", "rólunk", "rólatok", "róluk", "Önről", "Önökről"],
+		dem_prons: ["erről", "arról"],
+		usage: [
+				{
+				usecase: "movement from surface",
+				examples: [{word: "az asztralról", meaning: "from the table"}, {word: "a székről", meaning: "from the chair"}, {word: "a földről", meaning: "from the ground"}],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "miről", meaning: "from what"}]
+			},
+			{
+				usecase: "talking/writing about something",
+				examples: [{word: "az időjárásról beszélni", meaning: "to talk about the weather"}, {word: "történelemről írni", meaning: "to write about history"}],
+				question_words: [{word: "miről", meaning: "about what"}]
+			},
+			{
+				usecase: "from Hungary",
+				examples: ["Magyarországról"],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik országból", meaning: "from which country"}],				
+			},
+			{
+				usecase: "most Hungarian cities",
+				examples: [{word: "Budapestről", meaning: "from Budapest"}, {word: "Szegedről", meaning: "from Szeged"}],
+				exceptions: ["Egerből", "Debrecenből", "Sopronból"],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
+			},
+		]
+	},
+	{
+		name: "",
+		suffixes: ["-", "-"],
+		meaning: "",
+		pers_prons: ["", "", "", "", "", "", "", ""],
+		dem_prons: ["", ""],
+		usage: [
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
 			},
 		]
 	},
@@ -153,9 +249,9 @@ const cases = [
 		usage: [
 			{
 				usecase: "",
-				examples: ["", ""],
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
 				exceptions: [""],
-				question_words: ["", ""]
+				question_words: [{word: "", meaning: ""}]
 			},
 		]
 	},
