@@ -17,7 +17,6 @@ export default function PronounsTable(props) {
             )
         })
 
-    console.log(rows)
     return (
         <table>
             <tbody>
