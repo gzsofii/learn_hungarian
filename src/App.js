@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Cases from './components/Cases'
 
 function App() {
