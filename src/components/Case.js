@@ -16,23 +16,40 @@ export default function Case(props) {
             </h1>
             
             { !hidden && 
-                <div>
-                    {suffixes && <div>Suffixes: <Value>{suffixes.join(', ')}</Value></div>}
-                    {meaning && <div>Meaning: <Value>{meaning}</Value></div>}
+                <div className="case">
+                    {suffixes && 
+                        <div>
+                            <span className="property">Suffixes: </span>
+                            <Value>{suffixes.join(', ')}</Value>
+                        </div>
+                    }
 
-                    {usage && <div>Usage: 
-                        <ul>
-                            {usage.map( item => <li key={item.usecase}><Usecase {...item}/></li>)}
-                        </ul>
-                    </div>}
+                    {meaning && 
+                        <div>
+                             <span className="property">Meaning: </span>
+                             <Value>{meaning}</Value>
+                        </div>
+                    }
 
-                    <div>Personal pronouns:
+                    {usage && 
+                        <div>
+                            <span className="property">Usage: </span>
+                            <ul>
+                                {usage.map( item => <li key={item.usecase}><Usecase {...item}/></li>)}
+                            </ul>
+                        </div>
+                    }
+
+                    <div className="pers-pronouns">
+                        <span className="property">Personal pronouns:</span>
                         <PronounsTable type="pers" pronouns={pers_prons}/>
                     </div>
 
-                    <div>Demonstrative pronouns:
+                    <div className="dem-pronouns">
+                        <span className="property">Demonstrative pronouns: </span>
                         <PronounsTable type="dem" pronouns={dem_prons}/>
                     </div>
+                  
                 </div>
             }
             

@@ -5,7 +5,7 @@ export default function Usecase(props) {
     const {usecase, examples, exceptions, question_words} = props
     return (
         <>
-            {usecase}:
+            <span className="usecase">{usecase}:</span>
             <ul>
                 {examples && 
                 <li>{`examples: `}

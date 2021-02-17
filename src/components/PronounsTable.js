@@ -18,10 +18,11 @@ export default function PronounsTable(props) {
         })
 
     return (
-        <table>
-            <tbody>
-                {rows}
-            </tbody>
-        </table>
+            <table>
+                <tbody>
+                    {rows}
+                </tbody>
+            </table>
+        
     )
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useState} from 'react'
 import Case from './Case'
 import ModeContext, {MODE} from './../context/ModeContext'
 import cases from '../data/cases_data.js'
