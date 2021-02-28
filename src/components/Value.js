@@ -6,12 +6,10 @@ export default function Value(props) {
     const [hidden, setHidden] = useState(mode.visibility === MODE.showAll ? false : true)
 
     useEffect(() => {
-            console.log("mode changed to ", mode); 
             if (mode.visibility === MODE.showAll) setHidden(false)
             else if (mode.visibility === MODE.hideAll) setHidden(true)
         }, [mode])
 
-    //console.log(hidden)
     return (
         hidden 
             ? <span className="hiddenValue" onClick={() => setHidden(!hidden)}></span> 

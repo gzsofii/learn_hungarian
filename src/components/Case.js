@@ -9,14 +9,14 @@ export default function Case(props) {
     const {name, suffixes, meaning, pers_prons, dem_prons, usage} = props
 
     return (
-        <>
+        <div className="case" >
             <h1 
                 onClick={() => setHidden(!hidden)}>
                 {name.slice(0,1).toUpperCase() + name.slice(1)}
             </h1>
             
             { !hidden && 
-                <div className="case">
+                <div>
                     {suffixes && 
                         <div>
                             <span className="property">Suffixes: </span>
@@ -34,8 +34,8 @@ export default function Case(props) {
                     {usage && 
                         <div>
                             <span className="property">Usage: </span>
-                            <ul>
-                                {usage.map( item => <li key={item.usecase}><Usecase {...item}/></li>)}
+                            <ul className="usage">
+                                {usage.map( item => <li key={item.usecase} className="usecase"><Usecase {...item}/></li>)}
                             </ul>
                         </div>
                     }
@@ -53,6 +53,6 @@ export default function Case(props) {
                 </div>
             }
             
-        </>
+        </div>
     )
 }

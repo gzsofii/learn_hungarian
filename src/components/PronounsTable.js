@@ -10,7 +10,7 @@ export default function PronounsTable(props) {
 
     const rows = orig_pronouns.map( (orig, i) => {
             return (
-                <tr>
+                <tr key={i}>
                     <td>{orig}</td>
                     <td><Value>{pronouns[i]}</Value></td>
                 </tr>
