@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import Case from './Case'
+import TopMenuBar from './TopMenuBar'
 import ModeContext, {MODE} from './../context/ModeContext'
 import cases from '../data/cases_data.js'
 
@@ -15,13 +16,10 @@ export default function Cases() {
     }, [mode])*/
     return (
         <>
-            <div>
-               <button onClick={() => setMode({visibility: MODE.showAll})}>Show all answers</button>
-               <button onClick={() => setMode({visibility: MODE.hideAll})}>Hide all answers</button>
-            </div>
+            <TopMenuBar setMode={setMode}/>
             <ModeContext.Provider value={mode}>
                 {console.log("Update ModeContext")}
-                <div>
+                <div className="casesContainer">
                     {cases.map( item => <Case key={item.name} {...item}/> ) }
                 </div>
             </ModeContext.Provider>   

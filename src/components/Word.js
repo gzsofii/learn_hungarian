@@ -6,7 +6,9 @@ export default function Word(props) {
     return (
         <>
         {typeof(term) === 'object'
-            ? <span className="tooltip">{term.word}<span className="tooltipText">{term.meaning}</span></span>
+            ? <span className="tooltip">{term.word}
+                <span className="tooltipText">{term.meaning}</span>
+              </span>
             : <span>{term}</span>
         }
         </>
