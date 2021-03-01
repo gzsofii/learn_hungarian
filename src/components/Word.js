@@ -1,5 +1,4 @@
 import React from "react"
-import WordWithMeaning from './WordWithMeaning' 
 
 export default function Word(props) {
     const {term} = props
@@ -7,8 +6,8 @@ export default function Word(props) {
     return (
         <>
         {typeof(term) === 'object'
-            ? <WordWithMeaning {...term}/>
-            : <span className="word">{term}</span>
+            ? <span className="tooltip">{term.word}<span className="tooltipText">{term.meaning}</span></span>
+            : <span>{term}</span>
         }
         </>
     )

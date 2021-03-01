@@ -19,21 +19,21 @@ export default function Case(props) {
                 <div>
                     {suffixes && 
                         <div>
-                            <span className="property">Suffixes: </span>
+                            <span className="propertyLabel">Suffixes: </span>
                             <Value>{suffixes.join(', ')}</Value>
                         </div>
                     }
 
                     {meaning && 
                         <div>
-                             <span className="property">Meaning: </span>
+                             <span className="propertyLabel">Meaning: </span>
                              <Value>{meaning}</Value>
                         </div>
                     }
 
                     {usage && 
                         <div>
-                            <span className="property">Usage: </span>
+                            <span className="propertyLabel">Usage: </span>
                             <ul className="usage">
                                 {usage.map( item => <li key={item.usecase} className="usecase"><Usecase {...item}/></li>)}
                             </ul>
@@ -41,12 +41,12 @@ export default function Case(props) {
                     }
 
                     <div className="pers-pronouns">
-                        <span className="property">Personal pronouns:</span>
+                        <span className="propertyLabel">Personal pronouns:</span>
                         <PronounsTable type="pers" pronouns={pers_prons}/>
                     </div>
 
                     <div className="dem-pronouns">
-                        <span className="property">Demonstrative pronouns: </span>
+                        <span className="propertyLabel">Demonstrative pronouns: </span>
                         <PronounsTable type="dem" pronouns={dem_prons}/>
                     </div>
                   
