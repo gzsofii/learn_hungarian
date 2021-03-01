@@ -18,21 +18,21 @@ export default function Case(props) {
             { !hidden && 
                 <div>
                     {suffixes && 
-                        <div>
+                        <div className="caseProperties">
                             <span className="propertyLabel">Suffixes: </span>
                             <Value>{suffixes.join(', ')}</Value>
                         </div>
                     }
 
                     {meaning && 
-                        <div>
+                        <div className="caseProperties">
                              <span className="propertyLabel">Meaning: </span>
                              <Value>{meaning}</Value>
                         </div>
                     }
 
                     {usage && 
-                        <div>
+                        <div className="caseProperties">
                             <span className="propertyLabel">Usage: </span>
                             <ul className="usage">
                                 {usage.map( item => <li key={item.usecase} className="usecase"><Usecase {...item}/></li>)}
@@ -40,16 +40,19 @@ export default function Case(props) {
                         </div>
                     }
 
-                    <div className="pers-pronouns">
-                        <span className="propertyLabel">Personal pronouns:</span>
-                        <PronounsTable type="pers" pronouns={pers_prons}/>
-                    </div>
+                    {pers_prons && 
+                        <div className="pers-pronouns caseProperties">
+                            <span className="propertyLabel">Personal pronouns:</span>
+                            <PronounsTable type="pers" pronouns={pers_prons}/>
+                        </div>
+                    }
 
-                    <div className="dem-pronouns">
-                        <span className="propertyLabel">Demonstrative pronouns: </span>
-                        <PronounsTable type="dem" pronouns={dem_prons}/>
-                    </div>
-                  
+                    {dem_prons &&
+                        <div className="dem-pronouns caseProperties">
+                            <span className="propertyLabel">Demonstrative pronouns: </span>
+                            <PronounsTable type="dem" pronouns={dem_prons}/>
+                        </div>
+                    }
                 </div>
             }
             

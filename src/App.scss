@@ -30,6 +30,7 @@ h1 {
     width: 100%;
     background-color: rgb(33, 33, 126);
     padding: 7px;
+    font-size: 0.8em;
     .topButton {
         background-color:transparent;
         border: 0;
@@ -41,7 +42,6 @@ h1 {
     }
 }
 
-
 .case {
     //position: relative;
     background-color: $case-bgcolor;
@@ -50,11 +50,9 @@ h1 {
     margin: 10px;
     padding: 5px;
     div {
-        margin: 15px;
-
+        //margin: 15px;
         ul li {
             margin-top: 20px;
-
             ul li {
                 margin-top: 5px;
             }
@@ -62,10 +60,36 @@ h1 {
     }
 }
 
+.caseProperties {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
 .propertyLabel  {
     font-weight: bold;
     color:rgb(0, 43, 80);
     font-size: 1.2em;
+}
+
+@mixin value {
+    cursor: pointer;
+}
+
+.hiddenValue {
+    @include value;
+    background-color: $hidden-color;//scale-color($hidden-color, $lightness: 10%);
+    max-width: 30px;
+    span {
+        visibility: hidden;
+    }
+}
+
+.shownValue {
+    @include value;
+    color: $hidden-color;
+    font-weight: bold;
 }
 
 .usecaseLabel {
@@ -84,28 +108,6 @@ h1 {
     padding: 10px;   
 }
 
-.value {
-    display: inline-block;
-    color: $hidden-color;
-    height: calc(1em + 6px);
-    cursor: pointer;
-   //border: 1px solid green;
-    padding: 0;
-    margin: 0px;
-    font-weight: bold;
-}
-
-.hiddenValue {
-    display: inline-block;
-    width: 50px;
-    height: 1em;
-    background-color: scale-color($hidden-color, $lightness: 10%);
-    border: 1px solid scale-color($hidden-color, $lightness: -20%);
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-
 .tooltip {
     position: relative;
     display: inline;
@@ -113,29 +115,27 @@ h1 {
     text-underline-position: under; //adds some space betweentext and underline
     text-decoration-style: dotted;
     text-decoration-color: grey;
-    //cursor: help;
-}
 
-.tooltip .tooltipText {
-    border: 1px solid scale-color($meaning-color, $lightness: -25%);
-    border-radius: 2px;
-    background-color: $meaning-color;
-    visibility: hidden;
-    position: absolute;
-    bottom: 120%;
-    left: 0%;
-    min-width: 100%;
-    text-align: center;
-    //top: -20px;
-    padding: 2px;
-    z-index: 2;
-    color: black;
+    .tooltipText {
+        border: 1px solid scale-color($meaning-color, $lightness: -25%);
+        border-radius: 2px;
+        background-color: $meaning-color;
+        visibility: hidden;
+        position: absolute;
+        bottom: 120%;
+        left: 0%;
+        min-width: 100%;
+        text-align: center;
+        //top: -20px;
+        padding: 2px;
+        z-index: 2;
+        color: black;
+    }
 }
 
 .tooltip:hover .tooltipText {
     visibility: visible ;
 }
-
 
 .exception {
     color:rgb(151, 12, 7);
@@ -146,7 +146,6 @@ h1 {
 
 @mixin pronounsStyle($color) {
     display: inline-block;
-    margin: 10px;
     table {
         background-color: $color;
         border-collapse: collapse;
