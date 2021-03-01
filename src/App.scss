@@ -1,6 +1,6 @@
 $hidden-color:  rgb(89, 104, 117);
 $pers-prons-color: rgb(255, 246, 166);
-$dem-prons-color: rgb(166, 243, 166);
+$dem-prons-color: rgb(201, 236, 201);
 $case-bgcolor:  rgb(253, 245, 226);
 $meaning-color: rgb(210, 210, 247);
 
@@ -87,7 +87,7 @@ h1 {
     text-underline-position: under; //adds some space betweentext and underline
     text-decoration-style: dotted;
     text-decoration-color: grey;
-    cursor: help;
+    //cursor: help;
 }
 
 .tooltip .tooltipText {
@@ -96,8 +96,10 @@ h1 {
     background-color: $meaning-color;
     visibility: hidden;
     position: absolute;
-    bottom: 100%;
+    bottom: 120%;
     left: 0%;
+    min-width: 100%;
+    text-align: center;
     //top: -20px;
     padding: 2px;
     z-index: 2;
