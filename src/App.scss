@@ -79,7 +79,7 @@ h1 {
 
 .hiddenValue {
     @include value;
-    background-color: $hidden-color;//scale-color($hidden-color, $lightness: 10%);
+    background-color: $hidden-color;
     max-width: 30px;
     span {
         visibility: hidden;
@@ -93,7 +93,7 @@ h1 {
 }
 
 .usecaseLabel {
-    color:rgb(0, 63, 21);
+    color:rgb(0, 90, 30);
     font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ h1 {
     position: relative;
     display: inline;
     text-decoration: underline;
-    text-underline-position: under; //adds some space betweentext and underline
+    text-underline-position: under; //adds some space between text and underline
     text-decoration-style: dotted;
     text-decoration-color: grey;
 

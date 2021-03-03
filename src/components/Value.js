@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import ModeContext, {MODE} from './../context/ModeContext'
 
 export default function Value(props) {
-    const mode = useContext(ModeContext) // mode is an object: {visibility: ..., change: ...}
+    const mode = useContext(ModeContext) // mode is an object: {visibility: ...}
     const [hidden, setHidden] = useState(mode.visibility === MODE.showAll ? false : true)
 
     useEffect(() => {
