@@ -5,7 +5,13 @@ const cases = [
 		meaning: "",
 		pers_prons: ["engem", "téged", "őt", "minket", "titeket", "őket", "Önt", "Önöket"],
 		dem_prons: ["ezt", "azt"],
-		examples: "",
+		usage: [
+			{
+				usecase: "object of a verb",
+				examples: ["epret", "Annát"],
+				question_words: ["mit", "kit"]
+			}
+		],
 	},
 	{
 		name: "dative",
@@ -16,13 +22,13 @@ const cases = [
 		usage: [
 			{
 				usecase: "for someone / something",
-				examples: ["Zsófinak", "Annának"],
-				question_words: [{word: "kinek", meaning: "for whom"}, "minek"]
+				examples: [{word: "Zsófinak", meaning: "for Zsófi"},  "Annának"],
+				question_words: [{word: "kinek", meaning: "for whom"}, {word: "minek", meaning: "for what"}]
 			},
 			{
 				usecase: "to call someone somehow",
-				examples: ["(engem) Zsófinak hívnak", "(őt) Józsefnek hívják"],
-				question_words: ["hogy hívnak (engem,téged, minket, titeket)", "hogy hívják (őt, őket, Önt, Önöket)"]
+				examples: [{word: "(engem) Zsófinak hívnak", meaning: "I'm called Zsófi"}, {word: "(őt) Józsefnek hívják", meaning: "he's called József"}],
+				question_words: ["hogy hívnak (engem / téged / minket / titeket)", "hogy hívják (őt / őket / Önt / Önöket)"]
 			},
 		]
 	},
