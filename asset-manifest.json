@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/learn_hungarian/static/css/main.aa767f89.chunk.css",
+    "main.js": "/learn_hungarian/static/js/main.0558a4ea.chunk.js",
+    "main.js.map": "/learn_hungarian/static/js/main.0558a4ea.chunk.js.map",
+    "runtime-main.js": "/learn_hungarian/static/js/runtime-main.018c931c.js",
+    "runtime-main.js.map": "/learn_hungarian/static/js/runtime-main.018c931c.js.map",
+    "static/js/2.f4e09856.chunk.js": "/learn_hungarian/static/js/2.f4e09856.chunk.js",
+    "static/js/2.f4e09856.chunk.js.map": "/learn_hungarian/static/js/2.f4e09856.chunk.js.map",
+    "index.html": "/learn_hungarian/index.html",
+    "static/css/main.aa767f89.chunk.css.map": "/learn_hungarian/static/css/main.aa767f89.chunk.css.map",
+    "static/js/2.f4e09856.chunk.js.LICENSE.txt": "/learn_hungarian/static/js/2.f4e09856.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.018c931c.js",
+    "static/js/2.f4e09856.chunk.js",
+    "static/css/main.aa767f89.chunk.css",
+    "static/js/main.0558a4ea.chunk.js"
+  ]
+}
