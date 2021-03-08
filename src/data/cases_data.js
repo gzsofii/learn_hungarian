@@ -328,6 +328,35 @@ const cases = [
 		],
 		verbs: [{word: "kapni (valamit) valakitől", meaning: "to get (something) from someone"}, {word: "félni valamitől", meaning: "to be afraid of something"}]
 	},
+	{
+		name: "instrumental",
+		suffixes: ["-val", "-vel"],
+		//image: "",
+		meaning: "with",
+		pers_prons: ["velem", "veled", "vele", "velünk", "veletek", "velük", "Önnel", "Önökkel"],
+		dem_prons: ["ezzel", "azzal"],
+		usage: [
+			{
+				usecase: "to do something together with someone",
+				examples: [{word: "Annával", meaning: "with Anna"}, {word: "egy kutyával", meaning: "with a dog"}],
+				question_words: [{word: "kivel", meaning: "with whom"}, {word: "mivel", meaning: "with what"}]
+			},
+			{
+				usecase: "traveling by a means of transport",
+				examples: [{word: "busszal", meaning: "by bus"}, {word: "biciklivel", meaning: "by bicycle"}, {word: "autóval", meaning: "by car"},{word: "vonattal", meaning: "by train"}, {word: "repülővel", meaning: "by train"} ],
+				exceptions: [{word: "gyalog", meaning: "on foot"}],
+				question_words: [{word: "mivel", meaning: "by what"}]
+			},
+			{
+				usecase: "exact comparison",
+				examples: [{word: "egy centiméterrel kisebb", meaning: "smaller by a centimetre"}, {word: "három perccel később", meaning: "three minutes later"}],
+				question_words: [{word: "mennyivel", meaning: "how much"}]
+			},
+			
+		],
+		verbs: [{word: "beszélni valakivel", meaning: "to talk with someone"}, {word: "találkozni valakivel", meaning: "to meet someone"}, {word: "játszani valakivel", meaning: "to play with someone"}, {word: "szorozni öttel", meaning: "to multiply by 5"}, {word: "osztani kettővel", meaning: "to divide by two"}],
+		notes: ["assimilation: if the word ends with a consonant, the letter \"v\" from -val or -vel assimilates to this last letter"]
+	},
 	/*{
 		name: "",
 		suffixes: ["-", "-"],
@@ -342,7 +371,14 @@ const cases = [
 				exceptions: [""],
 				question_words: [{word: "", meaning: ""}]
 			},
-		]
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+		],
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
 	},
 */
 

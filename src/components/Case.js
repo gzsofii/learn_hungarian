@@ -8,7 +8,7 @@ export default function Case(props) {
     const [hidden, setHidden] = useState(true)
     const mode = useContext(ModeContext)
 
-    const {name, suffixes, image, meaning, verbs, pers_prons, dem_prons, usage} = props
+    const {name, suffixes, image, meaning, verbs, notes, pers_prons, dem_prons, usage} = props
 
     const img_path = process.env.PUBLIC_URL + '/img/'
     console.log(img_path)
@@ -55,7 +55,14 @@ export default function Case(props) {
                                 {verbs.map( item => <li key={item.word}><Value>{item.word}</Value>: {item.meaning}</li>)}
                             </ul>
                         </div>
-                    }   
+                    } 
+
+                    {notes && 
+                        <div className="caseProperties">
+                            <span className="propertyLabel">Notes: </span>
+                            {notes}
+                        </div>
+                    }  
 
                     {pers_prons && 
                         <div className="pers-pronouns caseProperties">
