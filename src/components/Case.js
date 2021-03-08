@@ -11,6 +11,7 @@ export default function Case(props) {
     const {name, suffixes, image, meaning, pers_prons, dem_prons, usage} = props
 
     const img_path = process.env.PUBLIC_URL + '/img/'
+    console.log(img_path)
     return (
         <div className="case" >
             <h1 
@@ -46,6 +47,8 @@ export default function Case(props) {
                             </ul>
                         </div>
                     }
+
+                    
 
                     {pers_prons && 
                         <div className="pers-pronouns caseProperties">

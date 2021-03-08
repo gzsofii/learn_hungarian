@@ -238,23 +238,97 @@ const cases = [
 		]
 	},
 	{
-		name: "",
-		suffixes: ["-", "-"],
-		meaning: "",
-		pers_prons: ["", "", "", "", "", "", "", ""],
-		dem_prons: ["", ""],
+		name: "allative",
+		suffixes: ["-hoz", "-hez", "-höz"],
+		image: "hoz.png",
+		meaning: "to, towards",
+		pers_prons: ["hozzám", "hozzád", "hozzá", "hozzánk", "hozzátok", "hozzájuk", "Önhöz", "Önökhöz"],
+		dem_prons: ["ehhez", "ahhoz"],
 		usage: [
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "towards something",
+				examples: [{word: "a fához", meaning: "to the tree"}, {word: "a házhoz", meaning: "to the house"}],
+				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "mihez", meaning: "to what"}]
 			},
+			{
+				usecase: "to someone's house",
+				examples: [{word: "Péterhez", meaning: "to Péter / to Péter's house"}, {word: "hozzánk", meaning: "to our house"}],
+				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "kihez", meaning: "to whom"}]
+			},
+			{
+				usecase: "to add something to something",
+				examples: [{word: "hozzáadni valamit valamihez", meaning: "to add something to something"}],
+				question_words: [{word: "mihez", meaning: "to what"}]
+			},
+		],
+		verbs: [{word: "hozzámenni valakihez", meaning: "to marry someone"}, {word: "hozzáfogni valamihez", meaning: "to start doing something"}]
+	},
+	{
+		name: "adessive",
+		suffixes: ["-nál", "-nél"],
+		image: "nal.png",
+		meaning: "at",
+		pers_prons: ["nálam", "nálad", "nála", "nálunk", "nálatok", "náluk", "Önnél", "Önöknél"],
+		dem_prons: ["ennél", "annál"],
+		usage: [
+			{
+				usecase: "by something",
+				examples: [{word: "a fánál", meaning: "by the tree"}, {word: "a háznál", meaning: "by the house"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "minél", meaning: "by what"}]
+			},
+			{
+				usecase: "at someone's house",
+				examples: [{word: "Péternél", meaning: "at Péter's house"}, {word: "nálad", meaning: "at your place"}],
+				question_words: [{word: "hol", meaning: "where"}, {word: "kinél", meaning: "at whose place"}]
+			},
+			{
+				usecase: "to go and meet a professional",
+				examples: [{word: "az orvosnál", meaning: "at the doctor's"}, {word: "a főnöknél", meaning: "at the boss's"}],
+				question_words: [{word: "hol", meaning: "where"},{word: "kinél", meaning: "at whom"} ]
+			},
+			{
+				usecase: "to have something with oneself",
+				examples: [{word: "van nálad víz?", meaning: "do you have water with you?"}, {word: "van Péternél pénz", meaning: "Péter has money on him"}, {word: "Katinál van a könyvem", meaning: "Kati has my book (she borrowed it from me)"}],
+				question_words: ["kinél"]
+			},
+			{
+				usecase: "comparing someone to someone",
+				examples: [{word: "magasabb vagy nálam", meaning: "you are taller than me"}, {word: "Péter gazdagabb Marinál", meaning: "Péter is richer than Mari"}],
+				question_words: ["kinél"],
+				note: "\"mint\" can be used as well: magasabb vagy, mint én; Péter gazdagabb, mint Mari"
+			},
+		]
+	},
+	{
+		name: "ablative",
+		suffixes: ["-tól", "-től"],
+		image: "tol.png",
+		meaning: "away from",
+		pers_prons: ["tőlem", "tőled", "tőle", "tőlünk", "tőletek", "tőlük", "Öntől", "Önöktől"],
+		dem_prons: ["ettől", "attól"],
+		usage: [
+			{
+				usecase: "from something",
+				examples: [{word: "a fától", meaning: "from the tree"}, {word: "a háztól", meaning: "from the house"}],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "mitől", meaning: "from what"}]
+			},
+			{
+				usecase: "from someone's house",
+				examples: [{word: "Pétertől", meaning: "from Péter's house"}, {word: "tőlem", meaning: "from my place"}],
+				question_words: [{word: "honnan", meaning: "from where"}, {word: "kitől", meaning: "from whose place"}]
+			},
+			{
+				usecase: "from someone (eg. a gift)",
+				examples: [{word: "Pétertől", meaning: "from Péter"}, {word: "tőlem", meaning: "from me"}],
+				question_words: [{word: "kitől", meaning: "from whom"}]
+			},
+			
 		]
 	},
 	/*{
 		name: "",
 		suffixes: ["-", "-"],
+		image: "",
 		meaning: "",
 		pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["", ""],

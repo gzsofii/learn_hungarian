@@ -2,7 +2,7 @@ import React from "react"
 import Word from "./Word"
 
 export default function Usecase(props) {
-    const {usecase, examples, exceptions, question_words} = props
+    const {usecase, examples, exceptions, question_words, note} = props
     return (
         <>
             <span className="usecaseLabel">{usecase}</span>
@@ -24,6 +24,13 @@ export default function Usecase(props) {
                     <strong>question words: </strong>
                     {question_words.map((ex, i) => <Word term={ex} key={i}/>).reduce( (acc, curr) => [acc, ', ', curr] )}
                 </li> }
+
+                {note && 
+                    <li key="note" className="note">
+                        <strong>note: </strong>
+                        <span>{note}</span>
+                    </li>
+                }
             </ul>
         </>
     )
