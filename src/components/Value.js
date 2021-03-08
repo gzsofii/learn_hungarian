@@ -12,7 +12,7 @@ export default function Value(props) {
 
     return (
         <span 
-            className={hidden ? "value hiddenValue" : "value shownValue"} 
+            className={hidden ? "hiddenValue" : "shownValue"} 
             onClick={() => setHidden(!hidden)}>
             <span>{props.children}</span>
         </span>

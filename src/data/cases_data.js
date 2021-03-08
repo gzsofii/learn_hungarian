@@ -35,6 +35,7 @@ const cases = [
 	{
 		name: "illative",
 		suffixes: ["-ba", "-be"],
+		image: "ba.png",
 		meaning: "into, to",
 		pers_prons: ["belém", "beléd", "belé", "belénk", "belétek", "beléjük", "Önbe", 		"Önökbe"],
 		dem_prons: ["ebbe", "abba"],
@@ -67,6 +68,7 @@ const cases = [
 	{
 		name: "innessive",
 		suffixes: ["-ban", "-ben"],
+		image: "ban.png",
 		meaning: "in, inside",
 		pers_prons: ["bennem", "benned", "benne", "bennünk", "bennetek", "bennük", "Önben", "Önökben"],
 		dem_prons: ["ebben", "abban"],
@@ -108,6 +110,7 @@ const cases = [
 	{
 		name: "elative",
 		suffixes: ["-ból", "-ből"],
+		image: "bol.png",
 		meaning: "out of, from",
 		pers_prons: ["belőlem", "belőled", "belőle", "belőlünk", "belétek","belőlük", "Önből", "Önökből"],
 		dem_prons: ["ebből", "abból"],
@@ -138,6 +141,7 @@ const cases = [
 	{
 		name: "sublative",
 		suffixes: ["-ra", "-re"],
+		image: "ra.png",
 		meaning: "onto",
 		pers_prons: ["rám", "rád", "rá", "ránk", "rátok", "rájuk", "Önre", "Önökre"],
 		dem_prons: ["erre", "arra"],
@@ -173,6 +177,7 @@ const cases = [
 	{
 		name: "superessive",
 		suffixes: ["-n", "-on", "-en", "-ön"],
+		image: "on.png",
 		meaning: "on, upon",
 		pers_prons: ["rajtam", "rajtad", "rajta", "rajtunk", "rajtatok", "rajtuk", "Önön", "Önökön"],
 		dem_prons: ["ezen", "azon"],
@@ -204,6 +209,7 @@ const cases = [
 	{
 		name: "delative",
 		suffixes: ["-ról", "-ről"],
+		image: "rol.png",
 		meaning: "from",
 		pers_prons: ["rólam", "rólad", "róla", "rólunk", "rólatok", "róluk", "Önről", "Önökről"],
 		dem_prons: ["erről", "arról"],

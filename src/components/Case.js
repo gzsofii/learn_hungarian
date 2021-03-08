@@ -1,22 +1,29 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import Value from './Value'
 import Usecase from './Usecase'
 import PronounsTable from './PronounsTable'
+import ModeContext, {MODE} from './../context/ModeContext'
 
 export default function Case(props) {
     const [hidden, setHidden] = useState(true)
+    const mode = useContext(ModeContext)
 
-    const {name, suffixes, meaning, pers_prons, dem_prons, usage} = props
+    const {name, suffixes, image, meaning, pers_prons, dem_prons, usage} = props
 
+    const img_path = process.env.PUBLIC_URL + '/img/'
     return (
         <div className="case" >
             <h1 
                 onClick={() => setHidden(!hidden)}>
                 {name.slice(0,1).toUpperCase() + name.slice(1)}
+                {image && mode.visibility === MODE.showAll && 
+                    <img src={img_path + image}/>
+                }
             </h1>
             
             { !hidden && 
                 <div>
+                    
                     {suffixes && 
                         <div className="caseProperties">
                             <span className="propertyLabel">Suffixes: </span>
