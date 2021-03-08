@@ -6,7 +6,7 @@ import cases from '../data/cases_data.js'
 
 
 export default function Cases() {
-    const [mode, setMode] = useState({visibility: MODE.hideAll})
+    const [mode, setMode] = useState({visibility: MODE.showAll})
      //mode is an object, because this way if we click on hide all, then click on some Values to make them show up, and then again click hide all,
      // then in Value in useEffect it will detect as mode has changed (even though it's the same object).
      // If it is only a string, the useEffect won't run as it doesn't detect change in mode

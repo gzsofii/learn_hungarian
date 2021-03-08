@@ -8,10 +8,11 @@ const cases = [
 		usage: [
 			{
 				usecase: "object of a verb",
-				examples: ["epret", "Annát"],
+				examples: [{word: "epret enni", meaning: "to eat strawberry"}, {word: "TV-t nézni", meaning: "to watch TV"}, {word: "autót vezetni", meaning: "to drive a car"}],
 				question_words: ["mit", "kit"]
 			}
 		],
+		verbs: [{word: "látni valamit", meaning: "to see something"},{word: "enni vagy inni valamit", meaning: "to eat or drink something"},{word: "adni valamit", meaning: "to give something"},{word: "kapni valamit", meaning: "to get something"},{word: "olvasni valamit", meaning: "to read something"}, {word: "írni valamit", meaning: "to write something"}, {word: "álmodni valamit", meaning: "to dream something"}, {word: "főzni valamit", meaning: "to cook something"}]
 	},
 	{
 		name: "dative",
@@ -25,12 +26,8 @@ const cases = [
 				examples: [{word: "Zsófinak", meaning: "for Zsófi"},  "Annának"],
 				question_words: [{word: "kinek", meaning: "for whom"}, {word: "minek", meaning: "for what"}]
 			},
-			{
-				usecase: "to call someone somehow",
-				examples: [{word: "(engem) Zsófinak hívnak", meaning: "I'm called Zsófi"}, {word: "(őt) Józsefnek hívják", meaning: "he's called József"}],
-				question_words: ["hogy hívnak (engem / téged / minket / titeket)", "hogy hívják (őt / őket / Önt / Önöket)"]
-			},
-		]
+		],
+		verbs: [{word: "adni valakinek (valamit)", meaning: "to give (something) for someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
 	},
 	{
 		name: "illative",
@@ -105,7 +102,8 @@ const cases = [
 				examples: ["2021-ben", "kétezeregyben"],
 				question_words: [{word: "mikor", meaning: "when"}, {word: "melyik évben", meaning: "in which year"}]
 			}
-		]
+		],
+		verbs: [{word: "valamiben lenni (pl. kabátban lenni)", meaning: "to wear something (eg. to wear a coat)"}, {word: "hinni valamiben", meaning: "to believe in something"}, ]
 	},
 	{
 		name: "elative",
@@ -136,7 +134,8 @@ const cases = [
 				examples: [{word: "műanyagból", meaning: "from plastic"},{word: "fából", meaning: "from wood"}],
 				question_words: [{word: "miből", meaning: "from what"}, {word: "milyen anyagból", meaning: "from which material"}]
 			},
-		]
+		],
+		verbs: [{word: "valamiből készült", meaning: "to be made from something"}, {word: "élni valamiből", meaning: "to do something for a living"}]
 	},
 	{
 		name: "sublative",
@@ -172,7 +171,8 @@ const cases = [
 				examples: ["öt napra", "egy hétre", "három évre"],
 				question_words: [{word: "mennyi időre", meaning: "for how long"}]
 			},
-		]
+		],
+		verbs: [{word: "elutazni a hétvégére", meaning: "to travel away for the weekend"},{word: "várni valakire", meaning: "to wait for someone"}]
 	},
 	{
 		name: "superessive",
@@ -220,7 +220,7 @@ const cases = [
 				question_words: [{word: "honnan", meaning: "from where"}, {word: "miről", meaning: "from what"}]
 			},
 			{
-				usecase: "talking/writing about something",
+				usecase: "about something",
 				examples: [{word: "az időjárásról beszélni", meaning: "to talk about the weather"}, {word: "történelemről írni", meaning: "to write about history"}],
 				question_words: [{word: "miről", meaning: "about what"}]
 			},
@@ -235,7 +235,9 @@ const cases = [
 				exceptions: ["Egerből", "Debrecenből", "Sopronból"],
 				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
 			},
-		]
+		],
+		verbs: [{word: "írni valamiről", meaning: "to write about something"}, {word: "beszélni valamiről", meaning: "to talk about something"}, {word: "hallgatni valamiről", meaning: "not to talk about something (to stay quiet)"}, {word: "szólni valamiről", meaning: "1. to inform about something, 2. to be about a topic (eg. a movie is about something)"}, {word: "álmodni valamiről", meaning: "to dream about something"}, {word: "olvasni valamiről", meaning: "to read about something"}, {word: "gondolkozni valamiről", meaning: "to think about something"}, {word: "veszekedni valamiről", meaning: "to argue about something"}]
+		
 	},
 	{
 		name: "allative",
@@ -261,7 +263,7 @@ const cases = [
 				question_words: [{word: "mihez", meaning: "to what"}]
 			},
 		],
-		verbs: [{word: "hozzámenni valakihez", meaning: "to marry someone"}, {word: "hozzáfogni valamihez", meaning: "to start doing something"}]
+		verbs: [{word: "hozzámenni valakihez", meaning: "to marry someone"}, {word: "hozzáfogni valamihez", meaning: "to start doing something"}, {word: "elmenni valakihez", meaning: "to go to someone's place"}, {word: "beszélni valakihez", meaning: "to talk to someone"}]
 	},
 	{
 		name: "adessive",
@@ -323,7 +325,8 @@ const cases = [
 				question_words: [{word: "kitől", meaning: "from whom"}]
 			},
 			
-		]
+		],
+		verbs: [{word: "kapni (valamit) valakitől", meaning: "to get (something) from someone"}, {word: "félni valamitől", meaning: "to be afraid of something"}]
 	},
 	/*{
 		name: "",
