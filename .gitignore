@@ -25,3 +25,5 @@ yarn-error.log*
 .eslintcache
 
 /public/img/originals
+
+todo.txt

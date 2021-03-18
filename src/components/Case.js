@@ -60,7 +60,9 @@ export default function Case(props) {
                     {notes && 
                         <div className="caseProperties">
                             <span className="propertyLabel">Notes: </span>
-                            {notes}
+                            <ul>
+                                {notes.map( (item,i) => <li key={i}>{item}</li>)}
+                            </ul>
                         </div>
                     }  
 

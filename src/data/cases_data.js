@@ -30,6 +30,25 @@ const cases = [
 		verbs: [{word: "adni valakinek (valamit)", meaning: "to give (something) for someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
 	},
 	{
+		name: "genitiv",
+		suffixes: ["-é"],
+		//image: "",
+		meaning: "possession, \" 's\"",
+		pers_prons: ["enyém", "tied / tiéd", "övé", "mienk / miénk", "tietek / tiétek", "övék", "Öné", "Önöké"],
+		dem_prons: ["ezé", "azé"],
+		usage: [
+			{
+				usecase: "possession of someone or something",
+				examples: [{word: "Katié", meaning: "Kati's"},  {word: "a kutyáé", meaning: "the dog's"}, {word: "enyém", meaning: "mine"}, {word: "a gyerekeké", meaning: "the children's"}],
+				//exceptions: [""],
+				question_words: [{word: "kié, mié", meaning: "whose"}, ]
+			},
+			
+		],
+		//verbs: [{word: "", meaning: ""},{word: "", meaning: ""}],
+		notes: ["If the possession is also included, only the possession gets a suffix: Kati telefonja (Kati's phone), a kutya tálja (the dog's bowl), az én autóm (my car).", "Plural forms of personal pronouns: enyéim, tieid, övéi, mieink, tieitek, övéik, Önéi, Önökéi.", "Plural forms of demonstrative pronouns: ezéi, azéi.",]
+	},
+	{
 		name: "illative",
 		suffixes: ["-ba", "-be"],
 		image: "ba.png",
@@ -248,7 +267,7 @@ const cases = [
 		dem_prons: ["ehhez", "ahhoz"],
 		usage: [
 			{
-				usecase: "towards something",
+				usecase: "to something",
 				examples: [{word: "a fához", meaning: "to the tree"}, {word: "a házhoz", meaning: "to the house"}],
 				question_words: [{word: "hova / hová", meaning: "where to"}, {word: "mihez", meaning: "to what"}]
 			},
@@ -357,6 +376,132 @@ const cases = [
 		verbs: [{word: "beszélni valakivel", meaning: "to talk with someone"}, {word: "találkozni valakivel", meaning: "to meet someone"}, {word: "játszani valakivel", meaning: "to play with someone"}, {word: "szorozni öttel", meaning: "to multiply by 5"}, {word: "osztani kettővel", meaning: "to divide by two"}],
 		notes: ["assimilation: if the word ends with a consonant, the letter \"v\" from -val or -vel assimilates to this last letter"]
 	},
+	{
+		name: "terminative",
+		suffixes: ["-ig"],
+		//image: "",
+		meaning: "until",
+		//pers_prons: ["", "", "", "", "", "", "", ""],
+		dem_prons: ["eddig", "addig"],
+		usage: [
+			{
+				usecase: "up to a point in time",
+				examples: [{word: "hatig / hat óráig", meaning: "until six / until six o'clock"}, {word: "fél kettőig", meaning: "until half past one"}, {word: "március 15-ig", meaning: "until 15th March"}, {word: "2050-ig", meaning: "until 2050"}, {word: "tegnapig", meaning: "until yesterday"}, {word: "csütörtökig", meaning: "until Thursday"}],
+				question_words: [{word: "meddig", meaning: "until when"}, {word: "mikorra", meaning: "until when"}]
+			},
+			{
+				usecase: "up to an event",
+				examples: [{word: "karácsonyig", meaning: "until Christmas"}, {word: "a 30. szülinapomig", meaning: "until my 30th birthday"}, {word: "a nyári szünet végéig", meaning: "until the end of the summer holiday"}],
+				question_words: [{word: "meddig", meaning: "until when"}]
+			},
+			{
+				usecase: "duration of time",
+				examples: [{word: "két hétig", meaning: "for two weeks"}, {word: "három óráig", meaning: "for three hours"}, {word: "sokáig", meaning: "for a long time"}],
+				question_words: [{word: "meddig", meaning: "until when"},{word: "mennyi ideig", meaning: "for how long"}],
+				note: "Phrases like \"három óráig\" also mean \"until three o'clock\" (because \"óra\" means both \"hour\" and \"o'clock\")"
+			},
+			{
+				usecase: "to somewhere, but not further (German: bis)",
+				examples: [{word: "a fáig", meaning: "to the tree (not further)"}, {word: "az ajtóig", meaning: "to the door (not further)"}],
+				question_words: [{word: "meddig", meaning: "how far"}]
+			},
+		],
+		verbs: [{word: "aludni valameddig", meaning: "to sleep until some time"},{word: "tartani valameddig", meaning: "to last until some time"}, {word: "elmenni valameddig", meaning: "to go until reaching something"}]
+	},
+	{
+		name: "temporal",
+		suffixes: ["-kor"],
+		//image: "",
+		meaning: "at a time",
+		//pers_prons: ["", "", "", "", "", "", "", ""],
+		dem_prons: ["ekkor", "akkor"],
+		/*usage: [
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+		],
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+	},
+	{
+		name: "causal",
+		suffixes: ["-ért"],
+		//image: "",
+		meaning: "for, for the purpose of",
+		pers_prons: ["értem", "érted", "érte", "értünk", "értetek", "értük", "Önért", "Önökért"],
+		dem_prons: ["ezért", "azért"],
+		/*usage: [
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+		],
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+	},
+	{
+		name: "translative",
+		suffixes: ["-vá", "-vé"],
+		//image: "",
+		meaning: "turning into something",
+		//pers_prons: ["", "", "", "", "", "", "", ""],
+		dem_prons: ["ezzé", "azzá"],
+		/*usage: [
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+		],
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
+		*/
+	},
+	{
+		name: "modal",
+		suffixes: ["-ként"],
+		//image: "",
+		meaning: "as",
+		//pers_prons: ["", "", "", "", "", "", "", ""],
+		dem_prons: ["ekként", "akként"],
+		/*usage: [
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+			{
+				usecase: "",
+				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
+				exceptions: [""],
+				question_words: [{word: "", meaning: ""}]
+			},
+		],
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
+		*/
+	},
 	/*{
 		name: "",
 		suffixes: ["-", "-"],
@@ -378,10 +523,10 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
+		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}],
+		notes: ["",""],
 	},
 */
-
 ]
 
 export default cases
