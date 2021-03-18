@@ -10,7 +10,7 @@ export default function Case(props) {
 
     const {name, suffixes, image, meaning, verbs, notes, pers_prons, dem_prons, usage} = props
 
-    const img_path = process.env.PUBLIC_URL + '/img/'
+    const img_path = process.env.PUBLIC_URL + '/img/thumbnails/'
     console.log(img_path)
     return (
         <div className="case" >

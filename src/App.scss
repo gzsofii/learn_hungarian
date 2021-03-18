@@ -47,8 +47,10 @@ h1 {
     background-color: $case-bgcolor;
     border: 1px solid scale-color($case-bgcolor, $lightness: -15%);
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
     padding: 5px;
+    max-width: 800px;
     div {
         //margin: 15px;
         ul li {
