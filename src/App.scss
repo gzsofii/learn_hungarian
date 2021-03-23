@@ -173,7 +173,7 @@ h2 {
         margin: 10px;
         td {
             border: 1px solid scale-color($color, $lightness: -50%);
-            width: 70px;;
+            min-width: 70px;;
             padding: 5px;
         }
     }

@@ -191,7 +191,7 @@ const cases = [
 				question_words: [{word: "mennyi időre", meaning: "for how long"}]
 			},
 		],
-		phrases: [{word: "elutazni a hétvégére", meaning: "to travel away for the weekend"},{word: "várni valakire", meaning: "to wait for someone"}]
+		phrases: [{word: "elutazni a hétvégére", meaning: "to travel away for the weekend"},{word: "várni valakire", meaning: "to wait for someone"}, {word: "fordulni valamerre (pl. jobbra vagy balra)", meaning: "to turn somewhere (eg. left or right)"}]
 	},
 	{
 		name: "superessive",
