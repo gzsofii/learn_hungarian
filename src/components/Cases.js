@@ -17,6 +17,7 @@ export default function Cases() {
     return (
         <>
             <TopMenuBar setMode={setMode}/>
+            <h1>Cases</h1>
             <ModeContext.Provider value={mode}>
                 {console.log("Update ModeContext")}
                 <div className="casesContainer">

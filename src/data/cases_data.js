@@ -12,7 +12,7 @@ const cases = [
 				question_words: ["mit", "kit"]
 			}
 		],
-		verbs: [{word: "látni valamit", meaning: "to see something"},{word: "enni vagy inni valamit", meaning: "to eat or drink something"},{word: "adni valamit", meaning: "to give something"},{word: "kapni valamit", meaning: "to get something"},{word: "olvasni valamit", meaning: "to read something"}, {word: "írni valamit", meaning: "to write something"}, {word: "álmodni valamit", meaning: "to dream something"}, {word: "főzni valamit", meaning: "to cook something"}]
+		phrases: [{word: "látni valamit", meaning: "to see something"},{word: "enni vagy inni valamit", meaning: "to eat or drink something"},{word: "adni valamit", meaning: "to give something"},{word: "kapni valamit", meaning: "to get something"},{word: "olvasni valamit", meaning: "to read something"}, {word: "írni valamit", meaning: "to write something"}, {word: "álmodni valamit", meaning: "to dream something"}, {word: "főzni valamit", meaning: "to cook something"}]
 	},
 	{
 		name: "dative",
@@ -27,7 +27,7 @@ const cases = [
 				question_words: [{word: "kinek", meaning: "for whom"}, {word: "minek", meaning: "for what"}]
 			},
 		],
-		verbs: [{word: "adni valakinek (valamit)", meaning: "to give (something) for someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
+		phrases: [{word: "adni valakinek (valamit)", meaning: "to give (something) for someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
 	},
 	{
 		name: "genitiv",
@@ -45,7 +45,7 @@ const cases = [
 			},
 			
 		],
-		//verbs: [{word: "", meaning: ""},{word: "", meaning: ""}],
+		//phrases: [{word: "", meaning: ""},{word: "", meaning: ""}],
 		notes: ["If the possession is also included, only the possession gets a suffix: Kati telefonja (Kati's phone), a kutya tálja (the dog's bowl), az én autóm (my car).", "Plural forms of personal pronouns: enyéim, tieid, övéi, mieink, tieitek, övéik, Önéi, Önökéi.", "Plural forms of demonstrative pronouns: ezéi, azéi.",]
 	},
 	{
@@ -122,7 +122,7 @@ const cases = [
 				question_words: [{word: "mikor", meaning: "when"}, {word: "melyik évben", meaning: "in which year"}]
 			}
 		],
-		verbs: [{word: "valamiben lenni (pl. kabátban lenni)", meaning: "to wear something (eg. to wear a coat)"}, {word: "hinni valamiben", meaning: "to believe in something"}, ]
+		phrases: [{word: "valamiben lenni (pl. kabátban lenni)", meaning: "to wear something (eg. to wear a coat). Literal meaning: to be in something."}, {word: "hinni valamiben", meaning: "to believe in something"}, ]
 	},
 	{
 		name: "elative",
@@ -154,7 +154,7 @@ const cases = [
 				question_words: [{word: "miből", meaning: "from what"}, {word: "milyen anyagból", meaning: "from which material"}]
 			},
 		],
-		verbs: [{word: "valamiből készült", meaning: "to be made from something"}, {word: "élni valamiből", meaning: "to do something for a living"}]
+		phrases: [{word: "valamiből készült", meaning: "to be made from something"}, {word: "élni valamiből", meaning: "to do something for a living"}]
 	},
 	{
 		name: "sublative",
@@ -191,7 +191,7 @@ const cases = [
 				question_words: [{word: "mennyi időre", meaning: "for how long"}]
 			},
 		],
-		verbs: [{word: "elutazni a hétvégére", meaning: "to travel away for the weekend"},{word: "várni valakire", meaning: "to wait for someone"}]
+		phrases: [{word: "elutazni a hétvégére", meaning: "to travel away for the weekend"},{word: "várni valakire", meaning: "to wait for someone"}]
 	},
 	{
 		name: "superessive",
@@ -255,7 +255,7 @@ const cases = [
 				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
 			},
 		],
-		verbs: [{word: "írni valamiről", meaning: "to write about something"}, {word: "beszélni valamiről", meaning: "to talk about something"}, {word: "hallgatni valamiről", meaning: "not to talk about something (to stay quiet)"}, {word: "szólni valamiről", meaning: "1. to inform about something, 2. to be about a topic (eg. a movie is about something)"}, {word: "álmodni valamiről", meaning: "to dream about something"}, {word: "olvasni valamiről", meaning: "to read about something"}, {word: "gondolkozni valamiről", meaning: "to think about something"}, {word: "veszekedni valamiről", meaning: "to argue about something"}]
+		phrases: [{word: "írni valamiről", meaning: "to write about something"}, {word: "beszélni valamiről", meaning: "to talk about something"}, {word: "hallgatni valamiről", meaning: "not to talk about something (to stay quiet)"}, {word: "szólni valamiről", meaning: "1. to inform about something, 2. to be about a topic (eg. a movie is about something)"}, {word: "álmodni valamiről", meaning: "to dream about something"}, {word: "olvasni valamiről", meaning: "to read about something"}, {word: "gondolkozni valamiről", meaning: "to think about something"}, {word: "veszekedni valamiről", meaning: "to argue about something"}]
 		
 	},
 	{
@@ -282,7 +282,7 @@ const cases = [
 				question_words: [{word: "mihez", meaning: "to what"}]
 			},
 		],
-		verbs: [{word: "hozzámenni valakihez", meaning: "to marry someone"}, {word: "hozzáfogni valamihez", meaning: "to start doing something"}, {word: "elmenni valakihez", meaning: "to go to someone's place"}, {word: "beszélni valakihez", meaning: "to talk to someone"}]
+		phrases: [{word: "hozzámenni valakihez", meaning: "to marry someone"}, {word: "hozzáfogni valamihez", meaning: "to start doing something"}, {word: "elmenni valakihez", meaning: "to go to someone's place"}, {word: "beszélni valakihez", meaning: "to talk to someone"}]
 	},
 	{
 		name: "adessive",
@@ -345,12 +345,12 @@ const cases = [
 			},
 			
 		],
-		verbs: [{word: "kapni (valamit) valakitől", meaning: "to get (something) from someone"}, {word: "félni valamitől", meaning: "to be afraid of something"}]
+		phrases: [{word: "kapni (valamit) valakitől", meaning: "to get (something) from someone"}, {word: "félni valamitől", meaning: "to be afraid of something"}]
 	},
 	{
 		name: "instrumental",
 		suffixes: ["-val", "-vel"],
-		//image: "",
+		image: "val.png",
 		meaning: "with",
 		pers_prons: ["velem", "veled", "vele", "velünk", "veletek", "velük", "Önnel", "Önökkel"],
 		dem_prons: ["ezzel", "azzal"],
@@ -373,13 +373,13 @@ const cases = [
 			},
 			
 		],
-		verbs: [{word: "beszélni valakivel", meaning: "to talk with someone"}, {word: "találkozni valakivel", meaning: "to meet someone"}, {word: "játszani valakivel", meaning: "to play with someone"}, {word: "szorozni öttel", meaning: "to multiply by 5"}, {word: "osztani kettővel", meaning: "to divide by two"}],
+		phrases: [{word: "beszélni valakivel", meaning: "to talk with someone"}, {word: "találkozni valakivel", meaning: "to meet someone"}, {word: "játszani valakivel", meaning: "to play with someone"}, {word: "szorozni öttel", meaning: "to multiply by 5"}, {word: "osztani kettővel", meaning: "to divide by two"}],
 		notes: ["assimilation: if the word ends with a consonant, the letter \"v\" from -val or -vel assimilates to this last letter"]
 	},
 	{
 		name: "terminative",
 		suffixes: ["-ig"],
-		//image: "",
+		image: "ig.png",
 		meaning: "until",
 		//pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["eddig", "addig"],
@@ -406,12 +406,12 @@ const cases = [
 				question_words: [{word: "meddig", meaning: "how far"}]
 			},
 		],
-		verbs: [{word: "aludni valameddig", meaning: "to sleep until some time"},{word: "tartani valameddig", meaning: "to last until some time"}, {word: "elmenni valameddig", meaning: "to go until reaching something"}]
+		phrases: [{word: "aludni valameddig", meaning: "to sleep until some time"},{word: "tartani valameddig", meaning: "to last until some time"}, {word: "elmenni valameddig", meaning: "to go until reaching something"}]
 	},
 	{
 		name: "temporal",
 		suffixes: ["-kor"],
-		//image: "",
+		image: "kor.png",
 		meaning: "at a time",
 		//pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["ekkor", "akkor"],
@@ -429,7 +429,7 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
 	},
 	{
 		name: "causal",
@@ -452,7 +452,7 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
 	},
 	{
 		name: "translative",
@@ -475,7 +475,7 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
+		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]
 		*/
 	},
 	{
@@ -499,7 +499,7 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}]
+		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]
 		*/
 	},
 	/*{
@@ -523,7 +523,7 @@ const cases = [
 				question_words: [{word: "", meaning: ""}]
 			},
 		],
-		verbs: [{word: "", meaning: ""},{word: "", meaning: ""}],
+		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}],
 		notes: ["",""],
 	},
 */

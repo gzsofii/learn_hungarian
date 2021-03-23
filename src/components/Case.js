@@ -8,19 +8,19 @@ export default function Case(props) {
     const [hidden, setHidden] = useState(true)
     const mode = useContext(ModeContext)
 
-    const {name, suffixes, image, meaning, verbs, notes, pers_prons, dem_prons, usage} = props
+    const {name, suffixes, image, meaning,  phrases, notes, pers_prons, dem_prons, usage} = props
 
     const img_path = process.env.PUBLIC_URL + '/img/thumbnails/'
     console.log(img_path)
     return (
         <div className="case" >
-            <h1 
+            <h2 
                 onClick={() => setHidden(!hidden)}>
                 {name.slice(0,1).toUpperCase() + name.slice(1)}
                 {image && mode.visibility === MODE.showAll && 
                     <img src={img_path + image}/>
                 }
-            </h1>
+            </h2>
             
             { !hidden && 
                 <div>
@@ -48,11 +48,11 @@ export default function Case(props) {
                         </div>
                     }
 
-                    {verbs && 
+                    {phrases && 
                         <div className="caseProperties">
-                            <span className="propertyLabel">Some verbs: </span>
+                            <span className="propertyLabel">Some phrases: </span>
                             <ul>
-                                {verbs.map( item => <li key={item.word}><Value>{item.word}</Value>: {item.meaning}</li>)}
+                                {phrases.map( item => <li key={item.word}><Value>{item.word}</Value>: {item.meaning}</li>)}
                             </ul>
                         </div>
                     } 
