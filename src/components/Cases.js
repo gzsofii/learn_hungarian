@@ -1,8 +1,9 @@
 import React, { useState} from 'react'
 import Case from './Case'
-import TopMenuBar from './TopMenuBar'
+import ShowHideButtons from './ShowHideButtons'
 import ModeContext, {MODE} from './../context/ModeContext'
 import cases from '../data/cases_data.js'
+
 
 
 export default function Cases() {
@@ -16,8 +17,8 @@ export default function Cases() {
     }, [mode])*/
     return (
         <>
-            <TopMenuBar setMode={setMode}/>
-            <h1>Cases</h1>
+            <ShowHideButtons setMode={setMode}/>
+            <h1>Noun cases</h1>
             <ModeContext.Provider value={mode}>
                 {console.log("Update ModeContext")}
                 <div className="casesContainer">

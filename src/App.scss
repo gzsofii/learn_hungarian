@@ -3,6 +3,7 @@ $pers-prons-color: rgb(255, 246, 166);
 $dem-prons-color: rgb(201, 236, 201);
 $case-bgcolor:  rgb(253, 245, 226);
 $meaning-color: rgb(210, 210, 247);
+$menu-bgcolor: rgb(33, 33, 126);
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,6 +25,42 @@ h2 {
     cursor: pointer;
     margin: 5px;    
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: $menu-bgcolor;
+    padding: 7px;
+    font-size: 0.8em;
+    display: inline;
+    color: white;
+    cursor: pointer;
+    ul {
+        display: none;
+        position: absolute;
+        margin: 0;
+        background-color: $menu-bgcolor;
+        cursor: auto;
+        list-style-type: none;
+        li {
+            padding: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;;
+        }
+    }
+    &:hover ul {
+        display: block;
+        z-index: 9999;
+    }
+    /*span:hover ~ ul {
+        display: block;
+        z-index: 9999;
+    }*/   
+}
 
 #root {
     margin-top: 50px;
@@ -35,16 +72,14 @@ h2 {
     
 }
 
-.topMenuBar {
+.topButtons {
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    background-color: rgb(33, 33, 126);
+    right: 0;
+    z-index: 3;
     padding: 7px;
     font-size: 0.8em;
-    .topButton {
+    .topButton {        
         background-color:transparent;
         border: 0;
         margin-right: 20px;
@@ -54,6 +89,7 @@ h2 {
         //font-weight: bold;
     }
 }
+
 
 .case {
     //position: relative;

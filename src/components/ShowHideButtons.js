@@ -1,9 +1,9 @@
 import React from "react"
-import  {MODE} from './../context/ModeContext'
+import  {MODE} from '../context/ModeContext'
 
-export default function TopMenuBar({setMode}) {
+export default function ShowHideButtons({setMode}) {
     return (
-        <header className="topMenuBar">
+        <div className="topButtons">
             <span 
                 className="topButton"
                 onClick={() => setMode({visibility: MODE.showAll})}>
@@ -15,6 +15,6 @@ export default function TopMenuBar({setMode}) {
                 onClick={() => setMode({visibility: MODE.hideAll})}>
                 Hide all answers
             </span>
-        </header>
+        </div>
     )
 }
