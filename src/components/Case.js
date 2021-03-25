@@ -43,7 +43,7 @@ export default function Case(props) {
                         <div className="caseProperties">
                             <span className="propertyLabel">Usage: </span>
                             <ul className="usage">
-                                {usage.map( item => <li key={item.usecase} className="usecase"><Usecase {...item}/></li>)}
+                                {usage.map( (item, i) => <li key={i} className="usecase"><Usecase {...item}/></li>) /*list is static, so index can be used as key*/}
                             </ul>
                         </div>
                     }
@@ -52,7 +52,7 @@ export default function Case(props) {
                         <div className="caseProperties">
                             <span className="propertyLabel">Some phrases: </span>
                             <ul>
-                                {phrases.map( item => <li key={item.word}><Value>{item.word}</Value>: {item.meaning}</li>)}
+                                {phrases.map( (item, i) => <li key={i}><Value>{item.word}</Value>: {item.meaning}</li>)}
                             </ul>
                         </div>
                     } 
@@ -64,7 +64,7 @@ export default function Case(props) {
                                 {notes.map( (item,i) => <li key={i}>{item}</li>)}
                             </ul>
                         </div>
-                    }  
+                    } 
 
                     {pers_prons && 
                         <div className="pers-pronouns caseProperties">
