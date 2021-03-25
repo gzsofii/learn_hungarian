@@ -21,7 +21,7 @@ export default function Cases() {
             <h1>Noun cases</h1>
             <ModeContext.Provider value={mode}>
                 {console.log("Update ModeContext")}
-                <div className="casesContainer">
+                <div>
                     {cases.map( item => <Case key={item.name} {...item}/> ) }
                 </div>
             </ModeContext.Provider>   

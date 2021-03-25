@@ -13,35 +13,37 @@ import DefiniteExercise from './components/exercises/DefiniteExercise';
 function App() {
   return (
     <Router>
-        <nav>
-          <span>Menu</span>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>Theory
-              <ol>
-                <li>
-                  <Link to="/cases">Noun cases</Link>
-                </li>
-                <li>
-                  <Link to="/verb_conjugation">Verb conjugation</Link>
-                </li>
-               </ol>
-            </li>
-            <li>Exercises
-              <ol>
-                <li>
-                  <Link to="/definite_indefinite_exercise">Definite-indefinite</Link>
-                </li>
-                <li>
-                  <Link to="/cases_exercise">Noun cases exercise</Link>
-                </li>
-              </ol>
+        <header>
+          <nav>
+            <img src={process.env.PUBLIC_URL + '/img/content.png'}></img>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>Theory
+                <ol>
+                  <li>
+                    <Link to="/cases">Noun cases</Link>
+                  </li>
+                  <li>
+                    <Link to="/verb_conjugation">Verb conjugation</Link>
+                  </li>
+                </ol>
+              </li>
+              <li>Exercises
+                <ol>
+                  <li>
+                    <Link to="/definite_indefinite_exercise">Definite-indefinite</Link>
+                  </li>
+                  <li>
+                    <Link to="/cases_exercise">Noun cases exercise</Link>
+                  </li>
+                </ol>
 
-            </li>
-          </ul>
-        </nav>
+              </li>
+            </ul>
+          </nav>
+        </header>
    
       
         <Switch>
@@ -53,8 +55,6 @@ function App() {
         </Switch>
         
     </Router>
-
- 
   );
 }
 

@@ -5,6 +5,8 @@ $case-bgcolor:  rgb(253, 245, 226);
 $meaning-color: rgb(210, 210, 247);
 $menu-bgcolor: rgb(33, 33, 126);
 
+$header-height: 25px;
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -25,18 +27,27 @@ h2 {
     cursor: pointer;
     margin: 5px;    
 }
-nav {
+
+header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
     background-color: $menu-bgcolor;
-    padding: 7px;
+    height: $header-height;
+}
+
+nav {
     font-size: 0.8em;
     display: inline;
     color: white;
     cursor: pointer;
+    height: $header-height;
+    margin-left: 10px;
+    img {
+        height: 0.9*$header-height;
+    }
     ul {
         display: none;
         position: absolute;
@@ -49,30 +60,17 @@ nav {
         }
         a {
             color: white;
-            text-decoration: none;;
+            text-decoration: none;
         }
     }
     &:hover ul {
         display: block;
         z-index: 9999;
     }
-    /*span:hover ~ ul {
-        display: block;
-        z-index: 9999;
-    }*/   
-}
-
-#root {
-    margin-top: 50px;
-}
-
-.casesContainer {
-    margin: 0 auto;
-    max-width: 800px;
-    
 }
 
 .topButtons {
+    height: $header-height;
     position: fixed;
     top: 0;
     right: 0;
@@ -80,16 +78,21 @@ nav {
     padding: 7px;
     font-size: 0.8em;
     .topButton {        
-        background-color:transparent;
         border: 0;
         margin-right: 20px;
         border-collapse: collapse;
         cursor: pointer;
         color: white ;
         //font-weight: bold;
+        //border: 1px solid red;
     }
 }
 
+#root {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 800px;
+}
 
 .case {
     //position: relative;
