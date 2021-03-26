@@ -27,7 +27,7 @@ const cases = [
 				question_words: [{word: "kinek", meaning: "for whom"}, {word: "minek", meaning: "for what"}]
 			},
 		],
-		phrases: [{word: "adni valakinek (valamit)", meaning: "to give (something) for someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
+		phrases: [{word: "adni valakinek (valamit)", meaning: "to give (something) to someone"}, {word: "valaminek hívni (pl. engem Zsófinak hívnak)", meaning: "to call somehow (eg. they call me Zsófi)"},{word: "valakinek tetszik", meaning: "someone likes it (~it gives pleasure for someone)"}, {word: "hinni valakinek", meaning: "to believe someone"}]
 	},
 	{
 		name: "genitiv",
