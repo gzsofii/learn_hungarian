@@ -44,23 +44,36 @@ nav {
     color: white;
     cursor: pointer;
     height: $header-height;
-    margin-left: 10px;
     img {
         height: 0.9*$header-height;
+        margin-left: 10px;
     }
     ul {
         display: none;
         position: absolute;
         margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
         background-color: $menu-bgcolor;
         cursor: auto;
         list-style-type: none;
+        font-style: italic;
         li {
             padding: 5px;
+            //margin-left: 10px;
+            ol {
+                padding-left: 15px;
+                list-style-type: none;
+            }
         }
         a {
             color: white;
             text-decoration: none;
+            font-style: normal;
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: under; //adds some space between text and underline
+            }
         }
     }
     &:hover ul {
