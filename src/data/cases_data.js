@@ -78,7 +78,8 @@ const cases = [
 				examples: ["dobozba", "házba", "szobába"],
 				question_words: [{word: "hova / hová", meaning: "where to"},{word: "mibe", meaning: "into what"}]
 			}
-		]
+		],
+		phrases: [{word: "étterembe menni", meaning: "to go to a restaurant"}, {word: "belekeveredni valamibe", meaning: "to get entangled into something, to get involved in something (eg. a scandal, a crime)"}]
 
 	},
 	{
@@ -129,7 +130,7 @@ const cases = [
 		suffixes: ["-ból", "-ből"],
 		image: "bol.png",
 		meaning: "out of, from",
-		pers_prons: ["belőlem", "belőled", "belőle", "belőlünk", "belétek","belőlük", "Önből", "Önökből"],
+		pers_prons: ["belőlem", "belőled", "belőle", "belőlünk", "belőletek","belőlük", "Önből", "Önökből"],
 		dem_prons: ["ebből", "abból"],
 		usage: [
 			{
@@ -147,6 +148,11 @@ const cases = [
 				usecase: "few Hungarian cities",
 				examples: ["Egerből", "Debrecenből", "Sopronból"],
 				question_words: [{word: "honnan", meaning: "from where"}, {word: "melyik városból", meaning: "from which city"}]
+			},
+			{
+				usecase: "from something",
+				examples: [{word: "a dobozból", meaning: "from the box"}, {word: "a házból", meaning: "from the house"},{word: "a szobából", meaning: "from the room"}],
+				question_words: [{word: "miből", meaning: "from what"}, {word: "honnan", meaning: "from where"}]
 			},
 			{
 				usecase: "made from a material",
@@ -167,7 +173,7 @@ const cases = [
 			{
 				usecase: "movement to surface",
 				examples: ["asztalra", "földre"],
-				question_words: ["mire"]
+				question_words: [{word: "mire", meaning: "onto what"},{word: "hova / hová", meaning: "where"}]
 			},
 			{
 				usecase: "to Hungary",
@@ -204,7 +210,7 @@ const cases = [
 			{
 				usecase: "static position on surface",
 				examples: [{word: "az asztalon", meaning: "on the table"}, {word: "a széken", meaning: "on the chair"}],
-				question_words: [{word: "min", meaning: "on what"}]
+				question_words: [{word: "min", meaning: "on what"}, {word: "hol", meaning: "where"}]
 			},
 			{
 				usecase: "days of the week",
@@ -223,7 +229,8 @@ const cases = [
 				exceptions: [{word: "Egerben", meaning: "in Eger"},{word: "Debrecenben", meaning: "in Debrecen"}],
 				question_words: [{word: "hol", meaning: "where"}, {word: "melyik városban", meaning: "in which city"}]
 			},
-		]
+		],
+		phrases: [ {word: "gondolkozni valamin", meaning: "to think on / about something"}, {word: "ülni valamin", meaning: "to sit on something"}, {word: "meglepődni valamin", meaning: "to be surprised on something"}, {word: "csodálkozni valamin", meaning: "to wonder on something"}]
 	},
 	{
 		name: "delative",
@@ -236,7 +243,7 @@ const cases = [
 				{
 				usecase: "movement from surface",
 				examples: [{word: "az asztralról", meaning: "from the table"}, {word: "a székről", meaning: "from the chair"}, {word: "a földről", meaning: "from the ground"}],
-				question_words: [{word: "honnan", meaning: "from where"}, {word: "miről", meaning: "from what"}]
+				question_words: [ {word: "miről", meaning: "from what"},{word: "honnan", meaning: "from where"}]
 			},
 			{
 				usecase: "about something",
