@@ -485,12 +485,12 @@ const cases = [
 		usage: [
 			{
 				usecase: "as something / someone, being something / someone",
-				examples: [{word: "gyerekként", meaning: "as a child"}, {word: "", meaning: ""}],
+				examples: [{word: "gyerekként", meaning: "as a child"}, {word: "nőként", meaning: "as a woman"},{word: "pdf-ként", meaning: "as a PDF"}],
 				//exceptions: [""],
 				question_words: [{word: "miként", meaning: "as what"}]
 			},
 		],
-		phrases: [{word: "tanárként / mérnökként (stb) dolgozni", meaning: "to work as a teacher / engineer (etc)"},{word: "végezni valamiként", meaning: "graduate as something"},{word: "apránként", meaning: "bit by bit, gradually"}, {word: "futótűzként terjedni", meaning: "to spread like widefire"}]
+		phrases: [{word: "tanárként / mérnökként (stb) dolgozni", meaning: "to work as a teacher / engineer (etc)"},{word: "végezni valamiként", meaning: "graduate as something"},{word: "apránként", meaning: "bit by bit, gradually"},{word: "főként", meaning: "mainly"}, {word: "önként", meaning: "voluntarily"}, {word: "időnként", meaning: "from time to time"},{word: "futótűzként terjedni", meaning: "to spread like widefire"}, {word: "másként gondolkodni", meaning: "to think in a different way"}]
 	},
 	/*{
 		name: "",
