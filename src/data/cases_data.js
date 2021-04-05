@@ -422,21 +422,21 @@ const cases = [
 		meaning: "at a time",
 		//pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["ekkor", "akkor"],
-		/*usage: [
+		usage: [
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "at a given hour",
+				examples: [{word: "négy órakor / négykor (4-kor)", meaning: "at 4 o'clock"}, {word: "fél hatkor (fél 6-kor)", meaning: "at half past 5"}, {word: "két óra tíz perckor", meaning: "at 2:10"}],
+				//exceptions: [""],
+				question_words: [{word: "mikor", meaning: "when"}, {word: "hány órakor", meaning: "at what time"}]
 			},
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "some specific times",
+				examples: [{word: "éjfélkor", meaning: "at midnight"}, {word: "ebédkor", meaning: "at lunch (during lunch)"}, {word: "napfelkeltekor", meaning: "at sunrise"}, {word: "napnyugtakor", meaning: "at sunset"}],
+				exceptions: [{word: "délben", meaning: "at noon"}, {word: "reggel", meaning: "in the morning"}, {word: "este", meaning: "in the evening"}, {word: "hajnalban", meaning: "at dawn"}],
+				question_words: [{word: "mikor", meaning: "when"}]
 			},
 		],
-		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+		//phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]
 	},
 	{
 		name: "causal",
@@ -445,45 +445,35 @@ const cases = [
 		meaning: "for, for the purpose of",
 		pers_prons: ["értem", "érted", "érte", "értünk", "értetek", "értük", "Önért", "Önökért"],
 		dem_prons: ["ezért", "azért"],
-		/*usage: [
+		usage: [
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "to do something for the purpose of someone or something",
+				examples: [{word: "elmenni a gyerekekért", meaning: "to pick up the kids"}, {word: "felmászni a fára almáért", meaning: "to climb the tree for apples"}],
+				//exceptions: [""],
+				question_words: [{word: "miért", meaning: "why (for what purpose)"}, {word: "kiért", meaning: "for who"}]
 			},
-			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
-			},
+			
 		],
-		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]*/
+		phrases: [{word: "megtenni valamit valakiért", meaning: "to do something in favour of someone"},{word: "elmenni valakiért vagy valamiért", meaning: "to pick up / fetch someone or something"},{word: "meghalni valamiért", meaning: "to die for something"}, {word: "elnézést kérni valamiért", meaning: "to say sorry for something"}, {word: "köszönetet mondani valamiért", meaning: "to say thank you for something"}, {word: "fizetni valamiért", meaning: "to pay for something"}]
 	},
 	{
 		name: "translative",
 		suffixes: ["-vá", "-vé"],
-		//image: "",
-		meaning: "turning into something",
+		image: "va.png",
+		meaning: "into (eg. turning into something)",
 		//pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["ezzé", "azzá"],
-		/*usage: [
+		usage: [
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "to turn into something else",
+				examples: [{word: "békává változni", meaning: "to turn into a frog"}, {word: "széppé varázsolni valamit", meaning: "to make something beautiful"}],
+				//exceptions: [""],
+				question_words: [{word: "mivé", meaning: "into what"}]
 			},
-			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
-			},
+			
 		],
-		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]
-		*/
+		phrases: [{word: "valamivé változni", meaning: "to turn into something"}, {word: "fiává / lányává fogadni valakit", meaning: "to adopt someone as his son / daughter"}, {word: "hasznossá tenni magát", meaning: "to make oneself useful"}],
+		notes: ["assimilation: if the word ends with a consonant, the letter \"v\" from -vá or -vé assimilates to this last letter"]
 	},
 	{
 		name: "modal",
@@ -492,22 +482,15 @@ const cases = [
 		meaning: "as",
 		//pers_prons: ["", "", "", "", "", "", "", ""],
 		dem_prons: ["ekként", "akként"],
-		/*usage: [
+		usage: [
 			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
-			},
-			{
-				usecase: "",
-				examples: [{word: "", meaning: ""}, {word: "", meaning: ""}],
-				exceptions: [""],
-				question_words: [{word: "", meaning: ""}]
+				usecase: "as something / someone, being something / someone",
+				examples: [{word: "gyerekként", meaning: "as a child"}, {word: "", meaning: ""}],
+				//exceptions: [""],
+				question_words: [{word: "miként", meaning: "as what"}]
 			},
 		],
-		phrases: [{word: "", meaning: ""},{word: "", meaning: ""}]
-		*/
+		phrases: [{word: "tanárként / mérnökként (stb) dolgozni", meaning: "to work as a teacher / engineer (etc)"},{word: "végezni valamiként", meaning: "graduate as something"},{word: "apránként", meaning: "bit by bit, gradually"}, {word: "futótűzként terjedni", meaning: "to spread like widefire"}]
 	},
 	/*{
 		name: "",
