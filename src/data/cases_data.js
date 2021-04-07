@@ -1,18 +1,24 @@
 const cases = [
 	{
 		name: "accusative",
-		suffixes: ["-t"],
+		suffixes: ["-t, -ot, -et, -öt, -at"],
 		meaning: "",
 		pers_prons: ["engem", "téged", "őt", "minket", "titeket", "őket", "Önt", "Önöket"],
 		dem_prons: ["ezt", "azt"],
 		usage: [
 			{
 				usecase: "object of a verb",
-				examples: [{word: "epret enni", meaning: "to eat strawberry"}, {word: "TV-t nézni", meaning: "to watch TV"}, {word: "autót vezetni", meaning: "to drive a car"}],
+				examples: ["sót, hegyet, könyvet, házat, biciklit, almát, kenyeret"],
 				question_words: ["mit", "kit"]
 			}
 		],
-		phrases: [{word: "látni valamit", meaning: "to see something"},{word: "enni vagy inni valamit", meaning: "to eat or drink something"},{word: "adni valamit", meaning: "to give something"},{word: "kapni valamit", meaning: "to get something"},{word: "olvasni valamit", meaning: "to read something"}, {word: "írni valamit", meaning: "to write something"}, {word: "álmodni valamit", meaning: "to dream something"}, {word: "főzni valamit", meaning: "to cook something"}]
+		phrases: [{word: "látni valamit", meaning: "to see something"},{word: "enni vagy inni valamit", meaning: "to eat or drink something"},{word: "adni valamit", meaning: "to give something"},{word: "kapni valamit", meaning: "to get something"},{word: "olvasni valamit", meaning: "to read something"}, {word: "írni valamit", meaning: "to write something"}, {word: "álmodni valamit", meaning: "to dream something"}, {word: "főzni valamit", meaning: "to cook something"}, {word: "autót vezetni", meaning: "to drive a car"}, {word: "TV-t nézni", meaning: "to watch TV"}],
+		notes: ["If the noun ends with an -a or -e, it will become the long version of it: alma - almát, zene - zenét, mese - mesét, fa - fát.",
+				"Dropping vowels: dolog - dolgot, cukor - cukrot, eper - epret, tükör - tükröt, ajak - ajkat.",
+				"If the last but one letter is a long vowel, it might become short: tehén - tehenet, kenyér - kenyeret, tenyér - tenyeret, nyár - nyarat, kút - kutat, madár - madarat. But: határ - határt, tál - tálat, ház - házat, év - évet, méh - méhet, tányér - tányért.",
+				"Some exceptions: hó - havat, daru - darvat.",
+	]
+
 	},
 	{
 		name: "dative",
