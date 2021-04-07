@@ -1,9 +1,9 @@
 import React from "react"
-import Exercises from "../Exercises"
+import FillSentenceExercises from "../FillSentenceExercises"
 import exercises from "../../data/exercises/definite-indefinite"
 
 export default function DefiniteExercise() {
     return (
-        <Exercises title="Definite-Indefinite Exercise" data={exercises}/>
+        <FillSentenceExercises title="Definite-Indefinite Exercise" data={exercises}/>
     )
 }

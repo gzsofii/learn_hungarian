@@ -1,25 +1,25 @@
 const exercises = [
     {
         sentence: "_ az almát.",
-        solution: "eszem",
+        solution: "Eszem",
         words: "én, enni",
-        meaning: "I am eating the apple"
+        meaning: "I am eating the apple."
     },
     {
         sentence: "Almát _.",
         solution: "eszek",
         words: "én, enni",
-        meaning: "I am eating apple"
+        meaning: "I am eating apple."
     },
     {
         sentence: "_ rendőrt?",
-        solution: "látsz",
+        solution: "Látsz",
         words: "te, látni",
         meaning: "Do you see any policemen?"
     },
     {
         sentence: "_ a rendőrt?",
-        solution: "látod",
+        solution: "Látod",
         words: "te, látni",
         meaning: "Do you see the policemen?"
     },
@@ -37,13 +37,13 @@ const exercises = [
     },
     {
         sentence: "_ egy új ruhát.",
-        solution: "vesz",
+        solution: "Vesz",
         words: "ő, venni",
         meaning: "She is buying a new dress."
     },
     {
         sentence: "_ ezt a ruhát.",
-        solution: "megveszi",
+        solution: "Megveszi",
         words: "ő, megvenni",
         meaning: "She is buying this dress."
     },

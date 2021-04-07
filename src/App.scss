@@ -187,7 +187,6 @@ nav {
     text-underline-position: under; //adds some space between text and underline
     text-decoration-style: dotted;
     text-decoration-color: grey;
-
     .tooltipText {
         border: 1px solid scale-color($meaning-color, $lightness: -25%);
         border-radius: 2px;
@@ -207,6 +206,7 @@ nav {
 
 .tooltip:hover .tooltipText {
     visibility: visible ;
+   //min-width: 100px;
 }
 
 .exception {
@@ -238,3 +238,20 @@ nav {
     @include pronounsStyle($dem-prons-color)
 }
 
+.correctAnswer {
+    color:rgb(0, 90, 30);
+    font-weight: bold;
+}
+
+.wrongAnswer {
+    color: rgb(180, 32, 32);
+}
+
+.givenWrongAnswer {
+    text-decoration: line-through;
+}
+
+img.icon {
+    height: 1em;
+    margin-left: 5px;
+}
