@@ -52,7 +52,11 @@ const cases = [
 			
 		],
 		//phrases: [{word: "", meaning: ""},{word: "", meaning: ""}],
-		notes: ["If the possession is also included, only the possession gets a suffix: Kati telefonja (Kati's phone), a kutya tálja (the dog's bowl), az én autóm (my car).", "Plural forms of personal pronouns: enyéim, tieid, övéi, mieink, tieitek, övéik, Önéi, Önökéi.", "Plural forms of demonstrative pronouns: ezéi, azéi.",]
+		notes: ["If the possessor ends with an -a or -e (or -o and -ö, but these endings don't exist among Hungarian words), it will become long: Anna - Annáé, Éva - Éváé,  Emese - Emeséé, kutya - kutyáé, Malmö - Malmőé",
+				"If the possessor ends with an -é, the suffix is simply added to the end as usual: Máté - Mátéé, Zoé - Zoéé, büfé - büféé, kávé - kávéé",
+				"If the possession is also included, only the possession gets a suffix: Kati telefonja (Kati's phone), a kutya tálja (the dog's bowl), az én autóm (my car).", 
+				"Plural forms of personal pronouns: enyéim, tieid, övéi, mieink, tieitek, övéik, Önéi, Önökéi.", 
+				"Plural forms of demonstrative pronouns: ezéi, azéi.",]
 	},
 	{
 		name: "illative",
