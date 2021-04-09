@@ -238,6 +238,10 @@ nav {
     @include pronounsStyle($dem-prons-color)
 }
 
+.exercisesList > li {
+    margin-bottom: 20px;
+}
+
 .correctAnswer {
     color:rgb(0, 90, 30);
     font-weight: bold;

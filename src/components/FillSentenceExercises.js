@@ -10,14 +10,12 @@ export default function FillSentenceExercises(props) {
             </div>
             <h1>{props.title}</h1>
             
-            <ol>
+            <ol className="exercisesList">
                 {
-                
                     props.data.map( item => {
                         let arr = item.sentence.split("_")       
                         return <li><FillSentence firstPart={arr[0]} secondPart={arr[1]} words={item.words} solution={item.solution} meaning={item.meaning} checked={checked}/></li>
                     })
-                   
                 }
             </ol>
         </>
