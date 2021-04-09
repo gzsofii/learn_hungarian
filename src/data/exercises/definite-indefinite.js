@@ -1,55 +1,55 @@
 const exercises = [
     {
-        sentence: "_ az almát.",
-        solution: "Eszem",
+        sentence: "__ az almát.",
+        solution: [["Eszem"]],
         words: "én, enni",
         meaning: "I am eating the apple."
     },
     {
-        sentence: "Almát _.",
-        solution: "eszek",
+        sentence: "Almát __.",
+        solution: [["eszek"]],
         words: "én, enni",
         meaning: "I am eating apple."
     },
     {
-        sentence: "_ rendőrt?",
-        solution: "Látsz",
+        sentence: "__ rendőrt?",
+        solution: [["Látsz"]],
         words: "te, látni",
         meaning: "Do you see any policemen?"
     },
     {
-        sentence: "_ a rendőrt?",
-        solution: "Látod",
+        sentence: "__ a rendőrt?",
+        solution: [["Látod"]],
         words: "te, látni",
         meaning: "Do you see the policemen?"
     },
     {
-        sentence: "A sárga házat _.",
-        solution: "keressük",
+        sentence: "A sárga házat __.",
+        solution: [["keressük"]],
         words: "mi, keresni",
         meaning: "We are looking for the yellow house."
     },
     {
-        sentence: "Egy sárga házat _.",
-        solution: "keresünk",
+        sentence: "Egy sárga házat __.",
+        solution: [["keresünk"]],
         words: "mi, keresni",
         meaning: "We are looking for a yellow house."
     },
     {
-        sentence: "_ egy új ruhát.",
-        solution: "Vesz",
+        sentence: "__ egy új ruhát.",
+        solution: [["Vesz"]],
         words: "ő, venni",
         meaning: "She is buying a new dress."
     },
     {
-        sentence: "_ ezt a ruhát.",
-        solution: "Megveszi",
+        sentence: "__ ezt a ruhát.",
+        solution: [["Megveszi"]],
         words: "ő, megvenni",
         meaning: "She is buying this dress."
     },
     {
-        sentence: "Mennyi fát _?",
-        solution: "láttok",
+        sentence: "Mennyi fát __?",
+        solution: [["láttok"]],
         words: "ti, látni",
         meaning: "How many trees do you see?"
     },

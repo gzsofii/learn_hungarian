@@ -8,6 +8,8 @@ import {
 import './App.scss';
 import Cases from './components/Cases';
 import DefiniteExercise from './components/exercises/DefiniteExercise';
+import PossessiveExercise from './components/exercises/PossessiveExercise';
+
 
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
                     <Link to="/definite_indefinite_exercise">Definite-indefinite</Link>
                   </li>
                   <li>
+                    <Link to="/possessive_exercise">Possessive</Link>
+                  </li>
+                  <li>
                     <Link to="/cases_exercise">Noun cases exercise</Link>
                   </li>
                 </ol>
@@ -50,6 +55,7 @@ function App() {
           <Route path="/cases"><Cases/></Route>
           <Route path="/verb_conjugation"><h1>Verb conjugation</h1></Route>
           <Route path="/definite_indefinite_exercise"><DefiniteExercise/></Route>
+          <Route path="/possessive_exercise"><PossessiveExercise/></Route>
           <Route path="/cases_exercise"><h1>Noun cases exercise</h1></Route>
           <Route path="/"><h1>Home</h1></Route>
         </Switch>

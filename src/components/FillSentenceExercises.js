@@ -13,8 +13,10 @@ export default function FillSentenceExercises(props) {
             <ol className="exercisesList">
                 {
                     props.data.map( item => {
-                        let arr = item.sentence.split("_")       
-                        return <li><FillSentence firstPart={arr[0]} secondPart={arr[1]} words={item.words} solution={item.solution} meaning={item.meaning} checked={checked}/></li>
+                       // let arr = item.sentence.split("_")       
+                        return <li><FillSentence sentence={item.sentence} words={item.words} solution={item.solution} meaning={item.meaning} checked={checked}/></li>
+                        
+                        //return <li><FillSentence firstPart={arr[0]} secondPart={arr[1]} words={item.words} solution={item.solution} meaning={item.meaning} checked={checked}/></li>
                     })
                 }
             </ol>
