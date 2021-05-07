@@ -1,7 +1,7 @@
 const exercises = [
     {
         id: "1",
-        sentence: "Ez az autó_ az __.",
+        sentence: "Ez az autó_ a(z) __.",
         solution: [[""], ["enyém"]],
         words: "én",
         meaning: "This car is mine."
@@ -16,27 +16,27 @@ const exercises = [
     {
         id: "3",
         sentence: "-Kié ez az autó? -Az __.",
-        solution: [["enyém", "én autóm"]],
+        solution: [["enyém"]],
         words: "én",
         meaning: "-Whose car is it? -Mine."
     },
     {
         id: "4",
-        sentence: "Ez a ház_ __",
-        solution: [["", " "], ["Petié"]],
+        sentence: "Ez a ház_ __.",
+        solution: [["", " "], ["Petié", "A Petié"]],
         words: "Peti",
         meaning: "This house is Peti's"
     },
     {
         id: "5",
         sentence: "Ez __ ház_.",
-        solution: [["Peti"], ["a"]],
+        solution: [["Peti", "Petinek a"], ["a"]],
         words: "Peti",
         meaning: "This is Peti's house"
     },
     {
         id: "6",
-        sentence: "-Kié ez a ház? -__",
+        sentence: "-Kié ez a ház? -__.",
         solution: [["Petié", "a Petié"]],
         words: "Peti",
         meaning: "-Whose house is it? -Peti's"
